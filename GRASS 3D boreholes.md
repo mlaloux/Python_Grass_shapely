@@ -40,6 +40,7 @@ my idea of ​​algorithm is
 
 2) I process this layer in Python (It is also possible to run it in the Python shell of the Layer Manager)
 
+```python
     # import modules (for the pure Python script)
     import sys, os, numpy, argparse
     import grass.script as g
@@ -77,12 +78,17 @@ my idea of ​​algorithm is
          # extrusion with base = limit of B formation (levels[i][1] = 850 for the first), height=thickness A-B (levelst[i][0])-float(levelst[i][1]) = 40 for the first)
          g.run_command('v.extrude', input='tmp', output=name, zshift=float(levels[i][1]),height= float(levelst[i][0])-float(levelst[i][1]),overwrite=True)
          g.run_command('g.remove', vect='tmp', quiet=True)
+ 
+ ```
+ 
 
 3) the resulting 3D layers (cylinders) in nviz (thickness of the interval A-B)
 
 ![](http://osgeo-org.1560.x6.nabble.com/attachment/4978801/3/boreholes.png)
 
 4) it is not possible to create a single layer because v.patch writes always 2D layers. For example:
+
+```python
         
          # creation of a layer
          g.run_command('v.edit', tool='create', map=outmap)
@@ -93,6 +99,7 @@ my idea of ​​algorithm is
              g.run_command('v.extrude', input='tmp', output='tmp_extr', zshift=float(levels[i][1]),height= float(levelst[i][0])-float(levels[i][1]),overwrite=True)
              g.run_command('v.patch', flags='a', input='tmp_extr', output=outmap, quiet=True, overwrite=True)
              g.run_command('g.remove', vect='tmp,tmp_extr', quiet=True)
+```
 
 gives the result "WARNING: The output map is not 3D"
 
