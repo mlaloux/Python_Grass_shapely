@@ -28,6 +28,13 @@ and now it is possible to use Shapely:
     'POINT (115421.3014247910032282 116774.7652432390023023)' 
 ```
 
+Some people working with Python in GRASS (treatments, not interface)  
+  - [Python Scripts For GRASS GIS](http://code.google.com/p/postgis-grass-r-py/wiki/0003_01_PythonForGrassGis)   
+  - [Programazionne & GIS](http://digilander.libero.it/antonioall/index.html (in Italian) 
+  - [Portail SIG](http://www.portailsig.org/) (me, in French)  
+  - [El Blog de José Guerrero](http://joseguerreroa.wordpress.com/) (in Spanish)   
+  - [Line extraction with GRASS GIS](http://www.webrian.ch/2012/04/line-extraction-with-grass-gis.html) 
+
 2) Finally, switching from Shapely geometries to GRASS GIS vector is not very complicated
 
 ```python
