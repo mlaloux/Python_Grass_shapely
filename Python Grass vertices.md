@@ -1,4 +1,4 @@
-This question was asked in  [http://gis.stackexchange.com/questions/28061/how-to-access-vector-coordinates-in-grass-gis-from-python/28100#28100](http://gis.stackexchange.com/questions/28061/how-to-access-vector-coordinates-in-grass-gis-from-python/28100#28100 "How to access vector coordinates in GRASS GIS from python?")
+This question was asked in  [How to access vector coordinates in GRASS GIS from python?](http://gis.stackexchange.com/questions/28061/how-to-access-vector-coordinates-in-grass-gis-from-python/28100#28100](http://gis.stackexchange.com/questions/28061/how-to-access-vector-coordinates-in-grass-gis-from-python/28100#28100)  
 
 I propose a solution with v.out.ascii.
 
